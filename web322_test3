@@ -1,0 +1,55 @@
+// question 1
+Write all the scripts needed for server.js and the search.hbs to answer the following requests:
+
+- Your search.hbs should have the following:
+
+You are required to build a simple Advanced Search form consist of the following:
+all these words: (TextBox)
+none of these words: (TextBox)
+Submit (Button)
+When the user submits the form data to the server, the form should not clear the entered values.
+
+The output results should be rendered below the form if the form data pass the validation successfully.
+
+Your form also should not clear the data if there is a validation error.
+
+All error messages must be rendered in their respective areas (before each form element).
+
+- Your server.js should do the following:
+
+You have to check all the form fields are not nulls (not empty).
+You have to create an error object contain all the error messages for the all form elements. 
+
+
+REMINDER:  All back-end functionality MUST be done using Node JS and Express. Your views MUST be created with Express-Handlebars.
+
+question 2
+Assume you have the following "customers" object, and you want to show the fields information (id,company, firstname,lastname) in the "customers.hbs" template view as a TABLE.
+
+When the user clicks on the "id" value of any of these rows, more information is shown at the top of the page as a TABLE. You must use a partial template "customers_info.hbs" to show the details about the customer.
+
+NOTE: When a customer clicks, both tables should appear on the same page.
+
+Please write all the necessary scripts to render the object in the template "customers.hbs" by the "server.js" file when you receive the customer id as a parameter in the URL, ex. "/customer/4FG12Y7U6".
+
+
+
+[
+
+{ "id": "4FG12Y7U6", "company": "Avionics Inc.", "firstname": "John", "lastname": "Doe", "entered": "2013-06-12T10:00:00Z" },
+
+{ "id": "4FG12Y7TX", "company": "Avis World Headquarters", "firstname": "Steve", "lastname": "Herbin", "entered": "2013-09-10T10:00:00Z" },
+
+{ "id": "4FG12Y7TV", "company": "BGP Productions", "firstname": "German", "lastname": "Vicencio", "entered": "2013-09-30T12:46:40Z" }
+
+... additional data omitted
+
+]
+
+Note: 
+
+You have to make sure that the object contains values; else, you must show a message saying "no information available."
+
+
+
+REMINDER:  All back-end functionality MUST be done using Node JS and Express. Your views MUST be created with Express-Handlebars.
